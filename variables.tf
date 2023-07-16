@@ -10,3 +10,15 @@ variable "vpc_enable_host_name" {
   type        = bool
   description = "Enable DNS hostnames in the VPC"
 }
+variable "availability_zones" {
+  type        = list(string)
+  description = "The availability zones to use for the VPC subnets"
+}
+variable "private_subnet_cidr_blocks" {
+  type        = list(string)
+  description = "The CIDR blocks for the private subnets"
+}
+variable "public_subnet_cidr_blocks" {
+  type        = list(string)
+  description = "The CIDR blocks for the public subnets"
+}
