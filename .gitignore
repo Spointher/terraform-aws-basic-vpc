@@ -1,6 +1,9 @@
 #Intellij IDEA
 .idea
 
+# Terraform lockfile
+.terraform.lock.hcl
+
 # Local .terraform directories
 **/.terraform/*
 
