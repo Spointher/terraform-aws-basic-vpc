@@ -1,8 +1,5 @@
-[![Terraform Registry](https://img.shields.io/badge/Terraform-Registry-blueviolet)](https://registry.terraform.io/modules/Spointher/basic-vpc/aws/latest)
-[![Latest Release](https://img.shields.io/github/v/release/Spointher/terraform-aws-basic-vpc)](https://github.com/Spointher/terraform-aws-basic-vpc/releases/latest)
-[![License](https://img.shields.io/github/license/Spointher/terraform-aws-basic-vpc)](https://github.com/Spointher/terraform-aws-basic-vpc/blob/master/LICENSE)
-
-# Terraform AWS VPC Module
+# Terraform AWS VPC Module 
+[![Terraform Registry](https://img.shields.io/badge/Terraform-Registry-blueviolet)](https://registry.terraform.io/modules/Spointher/basic-vpc/aws/latest) [![Latest Release](https://img.shields.io/github/v/release/Spointher/terraform-aws-basic-vpc)](https://github.com/Spointher/terraform-aws-basic-vpc/releases/latest) [![License](https://img.shields.io/github/license/Spointher/terraform-aws-basic-vpc)](https://github.com/Spointher/terraform-aws-basic-vpc/blob/master/LICENSE)
 
 This Terraform module allows you to create a customizable AWS VPC (Virtual Private Cloud) infrastructure in a simple and
 efficient way.
