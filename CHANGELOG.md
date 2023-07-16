@@ -1,5 +1,11 @@
 # Changelog
 
+## Release [v1.0.2](https://github.com/Spointher/terraform-aws-basic-vpc/releases/tag/v1.0.2)
+
+### Fixes
+
+- Fixed the map_public_subnets output variable
+
 ## Release [v1.0.1](https://github.com/Spointher/terraform-aws-basic-vpc/releases/tag/v1.0.1)
 
 ### Features
