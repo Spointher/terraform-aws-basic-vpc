@@ -23,6 +23,6 @@ output "map_private_subnets" {
   description = "The IDs of the private subnets - map(string)"
 }
 output "map_public_subnets" {
-  value       = {for subnet in aws_subnet.private_subnets : subnet.availability_zone => subnet.id}
+  value       = {for subnet in aws_subnet.public_subnets : subnet.availability_zone => subnet.id}
   description = "The IDs of the public subnets - map(string)"
 }
