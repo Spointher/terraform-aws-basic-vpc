@@ -1,5 +1,19 @@
 # Changelog
 
+## Release [v1.0.3](https://github.com/Spointher/terraform-aws-basic-vpc/releases/tag/v1.0.3)
+
+### Features
+
+- Added a new variable for EKS tags
+
+```hcl
+variable "enable_eks_subnet_tags" {
+  type        = bool
+  description = "Enable tags for the EKS subnets (kubernetes.io/role/internal-elb / kubernetes.io/role/elb)"
+  default     = false
+}
+```
+
 ## Release [v1.0.2](https://github.com/Spointher/terraform-aws-basic-vpc/releases/tag/v1.0.2)
 
 ### Fixes

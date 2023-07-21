@@ -22,3 +22,8 @@ variable "public_subnet_cidr_blocks" {
   type        = list(string)
   description = "The CIDR blocks for the public subnets"
 }
+variable "enable_eks_subnet_tags" {
+  type        = bool
+  description = "Enable tags for the EKS subnets (kubernetes.io/role/internal-elb / kubernetes.io/role/elb)"
+  default     = false
+}
