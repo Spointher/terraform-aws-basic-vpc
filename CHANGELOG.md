@@ -1,6 +1,6 @@
 # Changelog
 
-## Release [v1.0.3](https://github.com/Spointher/terraform-aws-basic-vpc/releases/tag/v1.0.1)
+## Release [v1.0.3](https://github.com/Spointher/terraform-aws-basic-vpc/releases/tag/v1.0.3)
 
 ### Features
 
