@@ -73,9 +73,14 @@ resource "aws_subnet" "private_subnets" {
   cidr_block        = var.private_subnet_cidr_blocks[count.index]
   vpc_id            = aws_vpc.vpc.id
   availability_zone = var.availability_zones[count.index]
-  tags              = {
-    Name = "private-subnet-${count.index + 1}-${var.availability_zones[count.index]}"
-  }
+  tags              = merge(
+    {
+      Name = "private-subnet-${count.index + 1}-${var.availability_zones[count.index]}"
+    },
+    var.enable_eks_subnet_tags ? {
+      "kubernetes.io/role/internal-elb" = "1"
+    } : {}
+  )
   #DependsOn
   depends_on = [aws_vpc.vpc]
 }
@@ -84,9 +89,14 @@ resource "aws_subnet" "public_subnets" {
   cidr_block        = var.public_subnet_cidr_blocks[count.index]
   vpc_id            = aws_vpc.vpc.id
   availability_zone = var.availability_zones[count.index]
-  tags              = {
-    Name = "public-subnet-${count.index + 1}-${var.availability_zones[count.index]}"
-  }
+  tags              = merge(
+    {
+      Name = "public-subnet-${count.index + 1}-${var.availability_zones[count.index]}"
+    },
+    var.enable_eks_subnet_tags ? {
+      "kubernetes.io/role/elb" = "1"
+    } : {}
+  )
   map_public_ip_on_launch = true
   #DependsOn
   depends_on              = [aws_vpc.vpc]
